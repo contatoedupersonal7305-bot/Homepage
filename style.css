@@ -1,68 +1,157 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-.conquer{
+.conquer {
     width: 100%;
     min-height: 100vh;
-    padding: 60px 20px;
+    padding: 30px 80px; 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between; 
+    align-items: stretch;
+    background-image: url(background.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
 }
 
-.conquer header{
+.conquer header {
     display: flex;
-    gap: 280px;
-    text-align: start;
-    height: 30%;
+    width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.iconese{
+.iconese {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.logoreal{
-    display: flex;
-    height: 60px;
+.logo h1{
+    font-weight: 500;
 }
 
-.paginas{
+.logoreal {
+    display: flex;
+    height: 50px;
+}
+
+.paginas {
     display: flex;
     gap: 30px;
 }
 
-.subscribe{
+.paginas h2{
+    font-weight: 500;
+}
+
+.subscribe {
     background-color: white; 
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     font-weight: 900;
-
- 
-    padding: 12px 24px; 
+    padding: 12px 28px; 
     border: none;
     border-radius: 25px; 
-  
-  
     cursor: pointer; 
     transition: all 0.3s ease; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.conquer main {
+    display: flex;
+    flex-grow: 1; 
+    align-items: center;
+    margin-top: 40px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 650px; 
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.head h1, h3{
+    font-weight: 500;
+}
+
+.adventure{
+    background-color: white; 
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 12px 28px; 
+    border: none;
+    border-radius: 25px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.adventure:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+footer{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bolinha{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 50%;
+    opacity: 70%;
+}
+
+.bolinha1{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 70%;
+}
+
+.categories {
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px 80px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: stretch;
 }
