@@ -1,332 +1,567 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory; /* Força o encaixe vertical perfeito */
+  overflow-y: scroll;
+  font-family: sans-serif;
 }
 
 .conquer {
-    width: 100%;
-    min-height: 100vh;
-    padding: 30px 80px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-    align-items: stretch;
-    background: url(premium_photo-1783095232207-ab82eb5eda85.avif);
-    background-size: cover;
-    background-position: center;  /* Centraliza a imagem na caixa */
-    background-repeat: no-repeat;
-    color: white;
-    border-bottom-left-radius: 5%;
-    border-bottom-right-radius: 5%;
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  background: url(premium_photo-1783095232207-ab82eb5eda85.avif);
+  background-size: cover;
+  background-position: center; /* Centraliza a imagem na caixa */
+  background-repeat: no-repeat;
+  color: white;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  scroll-snap-align: start; /* Trava o topo da seção no topo da tela */
+  height: 100vh; /* Garante que a seção tenha a altura exata da tela */
 }
 
 .conquer header {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .iconese {
-    display: flex;
-    align-items: center;
-    gap: 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.logo h1{
-    font-weight: 500;
+.logo h1 {
+  font-weight: 500;
 }
 
 .logoreal {
-    display: flex;
-    height: 50px;
+  display: flex;
+  height: 50px;
 }
 
 .paginas {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
-.paginas h2{
-    font-weight: 500;
+.paginas h2 {
+  font-weight: 500;
 }
 
 .subscribe {
-    background-color: white; 
-    color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    font-weight: 900;
-    padding: 12px 28px; 
-    border: none;
-    border-radius: 25px; 
-    cursor: pointer; 
-    transition: all 0.3s ease; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .subscribe:hover {
-    background-color: #f0f0f0;
-    transform: translateY(-2px);
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
 }
 
 .conquer main {
-    display: flex;
-    flex-grow: 1; 
-    align-items: center;
-    margin-top: 40px;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  margin-top: 40px;
 }
 
 .menu {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 650px; 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 650px;
 }
 
 .head {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.head h1, h3{
-    font-weight: 500;
+.head h1,
+h3 {
+  font-weight: 500;
 }
 
-.adventure{
-    background-color: white; 
-    color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    font-weight: 900;
-    padding: 12px 28px; 
-    border: none;
-    border-radius: 25px; 
-    cursor: pointer; 
-    transition: all 0.3s ease; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.adventure {
+  background-color: white;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .adventure:hover {
-    background-color: #f0f0f0;
-    transform: translateY(-2px);
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
 }
 
-.conquer footer{
-    display: flex;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+.conquer footer {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
-.bolinha{
-    height: 20px;
-    width: 20px;
-    background-color: rgb(224, 224, 224);
-    border-radius: 50%;
-    opacity: 70%;
+.bolinha {
+  height: 20px;
+  width: 20px;
+  background-color: rgb(224, 224, 224);
+  border-radius: 50%;
+  opacity: 70%;
 }
 
-.bolinha1{
-    height: 20px;
-    width: 20px;
-    background-color: white;
-    border-radius: 50%;
-    opacity: 70%;
+.bolinha1 {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 70%;
 }
 
 .categories {
-    width: 100%;
-    min-height: 100vh;
-    padding: 30px 80px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; 
-    align-items: stretch;
+  width: 100%;
+  min-height: 100vh;
+  scroll-snap-align: start; /* Trava o topo da seção no topo da tela */
+  height: 100vh; /* Garante que a seção tenha a altura exata da tela */
+  padding: 30px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
-.categories header{
-    display: flex;
-    height: 15%;
-    align-items: center;
-    justify-content: center;
+.categories header {
+  display: flex;
+  height: 15%;
+  align-items: center;
+  justify-content: center;
 }
 
 .topo {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .browse {
-    background-color: white; 
-    color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    font-weight: 900;
-    padding: 12px 28px; 
-    border: none;
-    border-radius: 25px; 
-    cursor: pointer; 
-    transition: all 0.3s ease; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .browse:hover {
-    background-color: #f0f0f0;
-    transform: translateY(-2px);
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
 }
 
 .categories main {
-    display: flex;
-    gap: 30px;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
-.caixa1, .caixa2, .caixa3 {
-    display: flex;
-    flex-direction: column;
-    height: 320px;
-    flex: 1; /* Faz as 3 caixas superiores dividirem a largura igualmente */
-    border-radius: 20px;
-    justify-content: space-between;
-    padding: 25px;
-    font-family: sans-serif;
+.caixa1,
+.caixa2,
+.caixa3 {
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  flex: 1; /* Faz as 3 caixas superiores dividirem a largura igualmente */
+  border-radius: 20px;
+  justify-content: space-between;
+  padding: 25px;
+  font-family: sans-serif;
 }
 
-.caixa1{
-    background-image: url(Trav-South-Africa-Mountain-90186-cover-mediumSquareAt3X-v2.jpg);
-    background-size: 100%;
+.caixa1 {
+  background-image: url(Trav-South-Africa-Mountain-90186-cover-mediumSquareAt3X-v2.jpg);
+  background-size: 100%;
 }
 
-.caixa2{
-    background-image: url(images\ \(4\).jpg);
-    background-size: 140%;
+.caixa2 {
+  background-image: url(images\ \(4\).jpg);
+  background-size: 140%;
 }
-.caixa3{
-    background-image: url(photo-1551632811-561732d1e306.avif);
-    background-size: 140%;
+.caixa3 {
+  background-image: url(photo-1551632811-561732d1e306.avif);
+  background-size: 140%;
 }
 
 .caixabotao {
-    display: flex;
-    justify-content: flex-end; /* Empurra o botão de seta para a ponta direita da caixa */
+  display: flex;
+  justify-content: flex-end; /* Empurra o botão de seta para a ponta direita da caixa */
 }
 
 .botao {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%; 
-    background-color: white;
-    color: black;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .botao svg {
-    width: 20px;
-    height: 20px;
-    transition: transform 0.3s ease;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
 }
 
 .botao:hover {
-    background-color: white;
-    transform: scale(1.08);
+  background-color: white;
+  transform: scale(1.08);
 }
 
 .botao:hover svg {
-    transform: translate(2px, -2px);
+  transform: translate(2px, -2px);
 }
 
 .botao:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .texto {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-    font-size: 0.8rem;
-    color:white
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  font-size: 0.8rem;
+  color: white;
 }
 
 .categories footer {
-    display: flex;
-    width: 100%;
-    margin-top: 40px;
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
 }
 
 .popular-container {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    width: 100%; /* Garante que ocupa a mesma largura total do main */
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%; /* Garante que ocupa a mesma largura total do main */
 }
 
 .titulo {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    width: 100%; /* Faz a linha ir de uma ponta à outra das caixas */
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  width: 100%; /* Faz a linha ir de uma ponta à outra das caixas */
 }
 
 .titulo h1 {
-    white-space: nowrap; /* Impede que o texto quebre linha */
-    font-size: 2rem;
+  white-space: nowrap; /* Impede que o texto quebre linha */
+  font-size: 2rem;
 }
 
 .titulo hr {
-    height: 2px;
-    flex-grow: 1; /* Faz a linha esticar até alinhar com a última caixa */
-    border: none;
-    background-color: black;
+  height: 2px;
+  flex-grow: 1; /* Faz a linha esticar até alinhar com a última caixa */
+  border: none;
+  background-color: black;
 }
 
 .caixas {
-    display: flex;
-    gap: 30px;
-    width: 100%;
-    justify-content: space-between;
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .caixa {
-    display: flex;
-    flex-direction: column;
-    height: 100px; /* Altura aumentada das caixas inferiores */
-    flex: 0.5;
-    background-color: gray;
-    border-radius: 15px;
-    justify-content: center;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 100px; /* Altura aumentada das caixas inferiores */
+  flex: 0.5;
+  background-color: gray;
+  border-radius: 15px;
+  justify-content: center;
+  gap: 5px;
 }
 
-.textao, .textinho{
-    font-size: 1rem;
-    height: fit-content;
-    width: fit-content;
-    font-weight: 900;
-    margin-left: 10px;
+.textao,
+.textinho {
+  font-size: 1rem;
+  height: fit-content;
+  width: fit-content;
+  font-weight: 900;
+  margin-left: 10px;
+}
+
+.subscribe-seccion {
+  width: 100%;
+  padding: 60px 80px;
+  height: 80vh;
+  scroll-snap-align: center;
+  background-color: #000000;
+  border-radius: 24px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.titulos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menu1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.notebook {
+  max-width: 550px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mac {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.interativo {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  height: 30px;
+  width: 400px;
+  background-color: white;
+  border-radius: 24px;
+}
+
+.dados {
+  display: flex;
+  align-items: center;
+}
+
+.interativo h3 {
+  color: black;
+}
+
+.email {
+  height: 30px;
+}
+
+.subscribe-button {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  font-weight: 900;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 20px;
+  text-align: center;
+}
+
+.review {
+  width: 100%;
+  padding: 60px 80px;
+  height: auto;
+  scroll-snap-align: start; /* Trava o topo da seção no topo da tela */
+  border-radius: 24px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-direction: column;
+  align-items: start;
+  height: 100vh;
+}
+
+.review main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.review2 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 50px;
+}
+
+.fotos {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.caixamaior {
+  height: 300px;
+  width: 600px;
+  background: url(william-veitch-DOA9RGxY4nM-unsplash.jpg);
+  background-size: cover;
+  background-position: center; /* Centraliza a imagem na caixa */
+  background-repeat: no-repeat;
+  border-radius: 24px;
+}
+
+.caixasmenores {
+  display: flex;
+  gap: 30px;
+}
+
+.caixamenor1,
+.caixamenor2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 200px;
+  width: 285px;
+}
+
+.caixamaior {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.caixamenor1 {
+  background: url(photo-1743092117162-6894bf2f9c35.avif);
+  border-radius: 24px;
+  background-size: cover;
+  background-position: center; /* Centraliza a imagem na caixa */
+  background-repeat: no-repeat;
+}
+.caixamenor2 {
+  background: url(karsten-winegeart-j1nhHw1qN3Q-unsplash.jpg);
+  border-radius: 24px;
+  background-size: cover;
+  background-position: center; /* Centraliza a imagem na caixa */
+  background-repeat: no-repeat;
+}
+
+.textocaixamenor {
+  font-size: 0.7rem;
+  font-family: sans-serif;
+  color: white;
+  margin-left: 10px;
+}
+.textocaixamaior {
+  font-size: 0.7rem;
+  font-family: sans-serif;
+  color: white;
+  margin-left: 20px;
+}
+
+.botaoT {
+  display: flex;
+  background-color: white;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.redessociais {
+  display: flex;
+  height: 30px;
+}
+
+.user {
+  height: 70px;
+  width: 70px;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.bio h3 {
+  font-size: 0.8rem;
+}
+
+.popular {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  width: 300px;
+  gap: 20px;
 }
