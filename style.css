@@ -482,6 +482,7 @@ h3 {
   gap: 10px;
   height: 200px;
   width: 285px;
+  justify-content: end;
 }
 
 .caixamaior {
@@ -510,6 +511,7 @@ h3 {
   font-family: sans-serif;
   color: white;
   margin-left: 10px;
+  margin-bottom: 20px;
 }
 .textocaixamaior {
   font-size: 0.7rem;
