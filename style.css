@@ -518,6 +518,7 @@ h3 {
   font-family: sans-serif;
   color: white;
   margin-left: 20px;
+  margin-top: 80px;
 }
 
 .botaoT {
@@ -718,7 +719,9 @@ h3 {
   .caixamaior {
     height: 240px;
   }
-
+  .textocaixamaior {
+    margin-top: 30px;
+  }
   /* Newsletter Form */
   .interativo {
     width: 100%;
