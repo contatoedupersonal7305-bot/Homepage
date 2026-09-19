@@ -157,15 +157,19 @@ html {
 
 .categories header{
     display: flex;
-    height: 20%;
+    height: 15%;
+    align-items: center;
+    justify-content: center;
 }
 
-.topo{
+.topo {
     display: flex;
-    gap: 700px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.browse{
+.browse {
     background-color: white; 
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -184,76 +188,142 @@ html {
     transform: translateY(-2px);
 }
 
-.categories main{
+.categories main {
     display: flex;
     gap: 30px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
-.botao {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%; 
-
-  background-color: white;
-  color: black;
-  border: none;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.botao svg {
-  width: 20px;
-  height: 20px;
-  transition: transform 0.3s ease;
-}
-
-.botao:hover {
-  background-color: white;
-  transform: scale(1.08);
-}
-
-.botao:hover svg {
-  transform: translate(2px, -2px);
-}
-
-
-.botao:active {
-  transform: scale(0.95);
+.caixa1, .caixa2, .caixa3 {
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+    flex: 1; /* Faz as 3 caixas superiores dividirem a largura igualmente */
+    border-radius: 20px;
+    justify-content: space-between;
+    padding: 25px;
+    font-family: sans-serif;
 }
 
 .caixa1{
+    background-image: url(Trav-South-Africa-Mountain-90186-cover-mediumSquareAt3X-v2.jpg);
+    background-size: 100%;
+}
+
+.caixa2{
+    background-image: url(images\ \(4\).jpg);
+    background-size: 140%;
+}
+.caixa3{
+    background-image: url(photo-1551632811-561732d1e306.avif);
+    background-size: 140%;
+}
+
+.caixabotao {
     display: flex;
-    flex-direction: column;
-    gap: 50px;
-    height: 400px;
-    width: 350px;
-    background-color: gray;
-    border-radius: 5%;
+    justify-content: flex-end; /* Empurra o botão de seta para a ponta direita da caixa */
+}
+
+.botao {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    background-color: white;
+    color: black;
+    border: none;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-.caixabotao{
-    display: flex;
-    gap: 290px;
-    margin-right: 10px;
+.botao svg {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
 }
 
-.texto{
+.botao:hover {
+    background-color: white;
+    transform: scale(1.08);
+}
+
+.botao:hover svg {
+    transform: translate(2px, -2px);
+}
+
+.botao:active {
+    transform: scale(0.95);
+}
+
+.texto {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    width: 300px;
-    font-size: 0.9rem;
-    font-weight: 900;
-    margin-left: 30px;
+    gap: 15px;
+    width: 100%;
+    font-size: 0.8rem;
+    color:white
 }
 
-.categories footer{
+.categories footer {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+}
 
+.popular-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%; /* Garante que ocupa a mesma largura total do main */
+}
+
+.titulo {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    width: 100%; /* Faz a linha ir de uma ponta à outra das caixas */
+}
+
+.titulo h1 {
+    white-space: nowrap; /* Impede que o texto quebre linha */
+    font-size: 2rem;
+}
+
+.titulo hr {
+    height: 2px;
+    flex-grow: 1; /* Faz a linha esticar até alinhar com a última caixa */
+    border: none;
+    background-color: black;
+}
+
+.caixas {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.caixa {
+    display: flex;
+    flex-direction: column;
+    height: 100px; /* Altura aumentada das caixas inferiores */
+    flex: 0.5;
+    background-color: gray;
+    border-radius: 15px;
+    justify-content: center;
+    gap: 5px;
+}
+
+.textao, .textinho{
+    font-size: 1rem;
+    height: fit-content;
+    width: fit-content;
+    font-weight: 900;
+    margin-left: 10px;
 }
