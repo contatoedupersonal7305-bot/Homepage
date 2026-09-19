@@ -16,7 +16,10 @@ html {
     flex-direction: column;
     justify-content: space-between; 
     align-items: stretch;
-    background: linear-gradient(rgb(88, 81, 81), rgb(65, 65, 65), rgb(68, 68, 68));
+    background: url(premium_photo-1783095232207-ab82eb5eda85.avif);
+    background-size: cover;
+    background-position: center;  /* Centraliza a imagem na caixa */
+    background-repeat: no-repeat;
     color: white;
     border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
