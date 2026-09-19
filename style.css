@@ -16,11 +16,10 @@ html {
     flex-direction: column;
     justify-content: space-between; 
     align-items: stretch;
-    background-image: url(background.avif);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: linear-gradient(rgb(88, 81, 81), rgb(65, 65, 65), rgb(68, 68, 68));
     color: white;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
 }
 
 .conquer header {
@@ -122,7 +121,7 @@ html {
     transform: translateY(-2px);
 }
 
-footer{
+.conquer footer{
     display: flex;
     height: 100px;
     align-items: center;
@@ -154,4 +153,107 @@ footer{
     flex-direction: column;
     justify-content: space-between; 
     align-items: stretch;
+}
+
+.categories header{
+    display: flex;
+    height: 20%;
+}
+
+.topo{
+    display: flex;
+    gap: 700px;
+}
+
+.browse{
+    background-color: white; 
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 12px 28px; 
+    border: none;
+    border-radius: 25px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.browse:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.categories main{
+    display: flex;
+    gap: 30px;
+}
+
+.botao {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; 
+
+  background-color: white;
+  color: black;
+  border: none;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.botao svg {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.botao:hover {
+  background-color: white;
+  transform: scale(1.08);
+}
+
+.botao:hover svg {
+  transform: translate(2px, -2px);
+}
+
+
+.botao:active {
+  transform: scale(0.95);
+}
+
+.caixa1{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 400px;
+    width: 350px;
+    background-color: gray;
+    border-radius: 5%;
+    justify-content: center;
+}
+
+.caixabotao{
+    display: flex;
+    gap: 290px;
+    margin-right: 10px;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    font-size: 0.9rem;
+    font-weight: 900;
+    margin-left: 30px;
+}
+
+.categories footer{
+
 }
